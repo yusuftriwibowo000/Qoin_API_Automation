@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="WebServicesAPI" time="12.418" tests="4" failures="0" errors="0">
+   <testsuite name="WebServicesAPI" tests="4" failures="0" errors="0" time="12.418" skipped="0" timestamp="16-08-2025T05:20:55" hostname="HP - APS-821972-1.hq.bni.co.id" id="Test Suites/WebServicesAPI">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\HP\\Downloads\\Test_API\\Reports\\20250816_052047\\WebServicesAPI\\20250816_052047"/>
+         <property name="logFiles" value="C:\\Users\\HP\\Downloads\\Test_API\\Reports\\20250816_052047\\WebServicesAPI\\20250816_052047\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="HP - APS-821972-1.hq.bni.co.id"/>
+         <property name="hostAddress" value="192.168.146.3"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/TC_001 - GetUsers" time="6.314" classname="Test Cases/TC_001 - GetUsers" status="PASSED">
+         <system-out><![CDATA[16-08-2025T05:20:55 - [TEST_CASE][PASSED] - Test Cases/TC_001 - GetUsers: Test Cases/TC_001 - GetUsers
+
+16-08-2025T05:20:56 - [TEST_STEP][PASSED] - statusCode = 200: null
+
+16-08-2025T05:20:56 - [TEST_STEP][PASSED] - contentType = "application/json; charset=utf-8": null
+
+16-08-2025T05:20:56 - [TEST_STEP][PASSED] - page = "1": null
+
+16-08-2025T05:20:56 - [TEST_STEP][PASSED] - response = UsersFunctions.getListUsers(page): Send request successfully
+
+16-08-2025T05:21:00 - [MESSAGE][INFO] - HAR: C:\Users\HP\Downloads\Test_API\Reports\20250816_052047\WebServicesAPI\20250816_052047\requests\main\0.har
+
+16-08-2025T05:21:01 - [MESSAGE][PASSED] - Send request successfully
+
+16-08-2025T05:21:01 - [TEST_STEP][PASSED] - println("Response Body : "): null
+
+16-08-2025T05:21:01 - [TEST_STEP][PASSED] - println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))): null
+
+16-08-2025T05:21:01 - [TEST_STEP][PASSED] - UsersFunctions.validateContentType(response, contentType): null
+
+16-08-2025T05:21:01 - [TEST_STEP][PASSED] - UsersFunctions.validateStatusCode(response, statusCode): Verify response status code successfully
+
+16-08-2025T05:21:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-08-2025T05:21:01 - [TEST_STEP][PASSED] - UsersFunctions.validateGetListUsersBody(response): null
+
+16-08-2025T05:21:01 - [TEST_STEP][PASSED] - println(Validasi untuk GET Users pada page $page berhasil.): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_002 - GetSingleUser" time="1.718" classname="Test Cases/TC_002 - GetSingleUser" status="PASSED">
+         <system-out><![CDATA[16-08-2025T05:21:01 - [TEST_CASE][PASSED] - Test Cases/TC_002 - GetSingleUser: Test Cases/TC_002 - GetSingleUser
+
+16-08-2025T05:21:02 - [TEST_STEP][PASSED] - statusCode = 200: null
+
+16-08-2025T05:21:02 - [TEST_STEP][PASSED] - contentType = "application/json; charset=utf-8": null
+
+16-08-2025T05:21:02 - [TEST_STEP][PASSED] - id = "4": null
+
+16-08-2025T05:21:02 - [TEST_STEP][PASSED] - response = UsersFunctions.getSingleUser(id): Send request successfully
+
+16-08-2025T05:21:03 - [MESSAGE][INFO] - HAR: C:\Users\HP\Downloads\Test_API\Reports\20250816_052047\WebServicesAPI\20250816_052047\requests\main\1.har
+
+16-08-2025T05:21:03 - [MESSAGE][PASSED] - Send request successfully
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - println("Response Body : "): null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))): null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - UsersFunctions.validateContentType(response, contentType): null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - UsersFunctions.validateStatusCode(response, statusCode): Verify response status code successfully
+
+16-08-2025T05:21:03 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - UsersFunctions.validateGetSingleUserBody(response, id): null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - println(Validasi untuk GET Single Users dengan Id : $id berhasil.): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_003 - UpdateUser" time="1.735" classname="Test Cases/TC_003 - UpdateUser" status="PASSED">
+         <system-out><![CDATA[16-08-2025T05:21:03 - [TEST_CASE][PASSED] - Test Cases/TC_003 - UpdateUser: Test Cases/TC_003 - UpdateUser
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - statusCode = 200: null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - contentType = "application/json; charset=utf-8": null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - id = "4": null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - firstName = "Yusuf": null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - lastName = "Wibowo": null
+
+16-08-2025T05:21:03 - [TEST_STEP][PASSED] - response = UsersFunctions.putUpdateUser(id, firstName, lastName): Send request successfully
+
+16-08-2025T05:21:05 - [MESSAGE][INFO] - HAR: C:\Users\HP\Downloads\Test_API\Reports\20250816_052047\WebServicesAPI\20250816_052047\requests\main\2.har
+
+16-08-2025T05:21:05 - [MESSAGE][PASSED] - Send request successfully
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - println("Response Body : "): null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))): null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - UsersFunctions.validateContentType(response, contentType): null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - UsersFunctions.validateStatusCode(response, statusCode): Verify response status code successfully
+
+16-08-2025T05:21:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - UsersFunctions.validateUpdateUserBody(response): null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - println(Validasi untuk PUT Update Data User dengan Id : $id berhasil.): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_004 - Register Successful" time="2.261" classname="Test Cases/TC_004 - Register Successful" status="PASSED">
+         <system-out><![CDATA[16-08-2025T05:21:05 - [TEST_CASE][PASSED] - Test Cases/TC_004 - Register Successful: Test Cases/TC_004 - Register Successful
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - statusCode = 200: null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - contentType = "application/json; charset=utf-8": null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - id = "4": null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - password = password: null
+
+16-08-2025T05:21:05 - [TEST_STEP][PASSED] - email = UsersFunctions.getEmailFromSingleUser(id): Send request successfully
+
+16-08-2025T05:21:06 - [MESSAGE][INFO] - HAR: C:\Users\HP\Downloads\Test_API\Reports\20250816_052047\WebServicesAPI\20250816_052047\requests\main\3.har
+
+16-08-2025T05:21:06 - [MESSAGE][PASSED] - Send request successfully
+
+16-08-2025T05:21:06 - [TEST_STEP][PASSED] - response = UsersFunctions.postRegisterUser(email, password): Send request successfully
+
+16-08-2025T05:21:07 - [MESSAGE][INFO] - HAR: C:\Users\HP\Downloads\Test_API\Reports\20250816_052047\WebServicesAPI\20250816_052047\requests\main\4.har
+
+16-08-2025T05:21:07 - [MESSAGE][PASSED] - Send request successfully
+
+16-08-2025T05:21:07 - [TEST_STEP][PASSED] - println("Response Body : "): null
+
+16-08-2025T05:21:07 - [TEST_STEP][PASSED] - println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))): null
+
+16-08-2025T05:21:07 - [TEST_STEP][PASSED] - UsersFunctions.validateContentType(response, contentType): null
+
+16-08-2025T05:21:07 - [TEST_STEP][PASSED] - UsersFunctions.validateStatusCode(response, statusCode): Verify response status code successfully
+
+16-08-2025T05:21:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-08-2025T05:21:07 - [TEST_STEP][PASSED] - UsersFunctions.validateRegisterSuccessfulBody(response): null
+
+16-08-2025T05:21:07 - [TEST_STEP][PASSED] - println("Validasi untuk POST Register Successful berhasil."): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[16-08-2025T05:20:55 - [TEST_SUITE][PASSED] - WebServicesAPI: Test Cases/TC_004 - Register Successful]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

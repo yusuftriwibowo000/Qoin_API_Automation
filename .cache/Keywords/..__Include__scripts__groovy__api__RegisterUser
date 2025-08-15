@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "23ED89078D26A57DF91FE9421EBDD378",
+  "keywordClasses": [
+    {
+      "name": "api.RegisterUser",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

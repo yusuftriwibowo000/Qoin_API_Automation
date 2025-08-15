@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_002 - GetSingleUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb89aaf6-a128-4721-bf12-b4b7300ba24a</testCaseGuid>
+</TestCaseEntity>
