@@ -1,0 +1,54 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+WebServicesAPI,,,,16-08-2025 16:21:01,16-08-2025 16:21:11,9.698s,PASSED
+,,,,,,,
+Test Cases/TC_001 - GetUsers,,,,16-08-2025 16:21:01,16-08-2025 16:21:06,4.573s,PASSED
+statusCode = 200,,,,16-08-2025 16:21:02,16-08-2025 16:21:02,0.003s,PASSED
+"contentType = ""application/json; charset=utf-8""",,,,16-08-2025 16:21:02,16-08-2025 16:21:02,0.003s,PASSED
+"page = ""1""",,,,16-08-2025 16:21:02,16-08-2025 16:21:02,0.002s,PASSED
+response = UsersFunctions.getListUsers(page),,,,16-08-2025 16:21:02,16-08-2025 16:21:06,3.772s,PASSED
+"println(""Response Body : "")",,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.001s,PASSED
+println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))),,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.141s,PASSED
+"UsersFunctions.validateContentType(response, contentType)",,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.026s,PASSED
+"UsersFunctions.validateStatusCode(response, statusCode)",,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.061s,PASSED
+UsersFunctions.validateGetListUsersBody(response),,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.052s,PASSED
+println(Validasi untuk GET Users pada page $page berhasil.),,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.001s,PASSED
+,,,,,,,
+Test Cases/TC_002 - GetSingleUser,,,,16-08-2025 16:21:06,16-08-2025 16:21:07,0.995s,PASSED
+statusCode = 200,,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.001s,PASSED
+"contentType = ""application/json; charset=utf-8""",,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.002s,PASSED
+"id = ""4""",,,,16-08-2025 16:21:06,16-08-2025 16:21:06,0.002s,PASSED
+response = UsersFunctions.getSingleUser(id),,,,16-08-2025 16:21:06,16-08-2025 16:21:07,0.704s,PASSED
+"println(""Response Body : "")",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.004s,PASSED
+println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))),,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.005s,PASSED
+"UsersFunctions.validateContentType(response, contentType)",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.003s,PASSED
+"UsersFunctions.validateStatusCode(response, statusCode)",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.008s,PASSED
+"UsersFunctions.validateGetSingleUserBody(response, id)",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.008s,PASSED
+println(Validasi untuk GET Single Users dengan Id : $id berhasil.),,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.002s,PASSED
+,,,,,,,
+Test Cases/TC_003 - UpdateUser,,,,16-08-2025 16:21:07,16-08-2025 16:21:08,1.416s,PASSED
+statusCode = 200,,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.000s,PASSED
+"contentType = ""application/json; charset=utf-8""",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.000s,PASSED
+"id = ""4""",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.015s,PASSED
+"firstName = ""Yusuf""",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.000s,PASSED
+"lastName = ""Wibowo""",,,,16-08-2025 16:21:07,16-08-2025 16:21:07,0.000s,PASSED
+"response = UsersFunctions.putUpdateUser(id, firstName, lastName)",,,,16-08-2025 16:21:07,16-08-2025 16:21:08,1.121s,PASSED
+"println(""Response Body : "")",,,,16-08-2025 16:21:08,16-08-2025 16:21:08,0.004s,PASSED
+println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))),,,,16-08-2025 16:21:08,16-08-2025 16:21:08,0.003s,PASSED
+"UsersFunctions.validateContentType(response, contentType)",,,,16-08-2025 16:21:08,16-08-2025 16:21:08,0.006s,PASSED
+"UsersFunctions.validateStatusCode(response, statusCode)",,,,16-08-2025 16:21:08,16-08-2025 16:21:08,0.009s,PASSED
+UsersFunctions.validateUpdateUserBody(response),,,,16-08-2025 16:21:08,16-08-2025 16:21:08,0.004s,PASSED
+println(Validasi untuk PUT Update Data User dengan Id : $id berhasil.),,,,16-08-2025 16:21:08,16-08-2025 16:21:08,0.001s,PASSED
+,,,,,,,
+Test Cases/TC_004 - Register Successful,,,,16-08-2025 16:21:08,16-08-2025 16:21:11,2.439s,PASSED
+statusCode = 200,,,,16-08-2025 16:21:09,16-08-2025 16:21:09,0.004s,PASSED
+"contentType = ""application/json; charset=utf-8""",,,,16-08-2025 16:21:09,16-08-2025 16:21:09,0.003s,PASSED
+"id = ""4""",,,,16-08-2025 16:21:09,16-08-2025 16:21:09,0.004s,PASSED
+password = password,,,,16-08-2025 16:21:09,16-08-2025 16:21:09,0.005s,PASSED
+email = UsersFunctions.getEmailFromSingleUser(id),,,,16-08-2025 16:21:09,16-08-2025 16:21:10,1.091s,PASSED
+"response = UsersFunctions.postRegisterUser(email, password)",,,,16-08-2025 16:21:10,16-08-2025 16:21:11,0.804s,PASSED
+"println(""Response Body : "")",,,,16-08-2025 16:21:11,16-08-2025 16:21:11,0.002s,PASSED
+println(JsonOutput.prettyPrint(JsonOutput.toJson(JsonSlurper().parseText(response.getResponseText())))),,,,16-08-2025 16:21:11,16-08-2025 16:21:11,0.003s,PASSED
+"UsersFunctions.validateContentType(response, contentType)",,,,16-08-2025 16:21:11,16-08-2025 16:21:11,0.002s,PASSED
+"UsersFunctions.validateStatusCode(response, statusCode)",,,,16-08-2025 16:21:11,16-08-2025 16:21:11,0.006s,PASSED
+UsersFunctions.validateRegisterSuccessfulBody(response),,,,16-08-2025 16:21:11,16-08-2025 16:21:11,0.004s,PASSED
+"println(""Validasi untuk POST Register Successful berhasil."")",,,,16-08-2025 16:21:11,16-08-2025 16:21:11,0.001s,PASSED
